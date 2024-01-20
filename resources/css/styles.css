@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
+}
+
+/* Global */
+
+body {
+    text-align: center;
+    margin: 1rem;
+    background-color: #ffffff;
+}
+
+
+.border {
+    border: 1px #f9f9f9 solid;
+    border-radius: 15px;
+    box-shadow: 2px 1px 5px #d3d3d3;
+}
+
+.innerpadding{ 
+    padding: 1rem;
+}
+
+.minwidth {
+    width: 17.75rem;
+}
+
+.full-site {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-content:center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill, .certification, .industry{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: center;
+    max-width: 100px;
+    justify-content: center;
+    margin: 10px;
+}
+
+.skill img, .certification img, .industry img, .description img {
+    max-width: 50%;
+}
+
+@media only screen and (max-width:755px) {
+    .full-site {
+    flex-direction:column;
+}
+    
+}
+
+
+/* Header */
+
+header {
+    max-width: 18.75rem;
+    display: flex;
+    flex:1;
+    align-items: center;
+}
+
+header img {
+    width: 165px;
+    height: auto;
+}
+
+header .name{
+    padding: 0.45rem 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+header .idtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+header .mission {
+    padding: 0.75rem 0;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 1.25rem;
+    font-weight: normal;    
+}
+
+.headernav ul {
+    list-style: none;
+}
+
+@media only screen and (max-width:750px) {
+    header {
+        margin: 0 auto;
+    }
+}
+
+/* Main Styles */
+
+main {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-content:center;
+    justify-content: center;
+    max-width: 43.75rem;
+    gap: 1.25rem;
+    flex: 1;
+    min-width: 43.75rem;
+}
+
+
+main .skills {
+    min-width: 15.65rem;
+}
+
+main .certifications {
+    min-width: 15.65rem;
+}
+
+main .industries {
+    min-width: 15.65rem;
+}
+
+main .descriptions {
+    min-width: 15.65rem;
+}
+
+@media only screen and (max-width:750px) {
+    main {
+        min-width: 100%;
+        margin: 1rem;
+    }
+
+    .skills, .certifications, .industries {
+        width: 100%
+    }
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 2rem auto;
+}
